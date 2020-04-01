@@ -8,6 +8,7 @@ git clone https://github.com/MaximeLafont/grp-5-maint
 A chaque fois que vous voulez modifier le code il faut que vous regardiez en amont ce qui a été modifié depuis votre dernière arrivé. Si vous ne voulez pas télécharger les dernières modification, ne faites rien, sinon faites:
 
 cd /Chemin/grp-5-main
+
 git pull
 
 Cela va automatiquement vous rajouter toutes les modification faites.
