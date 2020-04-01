@@ -2,6 +2,7 @@ pour creer le repertoire grp-5-maint en local(à faire qu'une fois au début):
 
 
 Admettons que vous vous situez dans /Chemin
+
 git clone https://github.com/MaximeLafont/grp-5-maint
 
 A chaque fois que vous voulez modifier le code il faut que vous regardiez en amont ce qui a été modifié depuis votre dernière arrivé. Si vous ne voulez pas télécharger les dernières modification, ne faites rien, sinon faites:
