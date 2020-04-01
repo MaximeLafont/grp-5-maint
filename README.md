@@ -17,8 +17,11 @@ Ensuite, modifiez ce que vous voulez.
 Pour uploader les nouvelles modification que vous avez fait:
 
 cd /chemin/grp-5/maint
+
 git add .
+
 git commit -m "le nom de votre modification"
+
 git push
 
 Dans tous les cas, même si vous n'êtes pas sure de vos commit, on a accès à tous les commit d'avant donc n'hésitez pas à pusher.
