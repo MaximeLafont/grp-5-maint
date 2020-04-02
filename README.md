@@ -18,9 +18,21 @@ Pour uploader les nouvelles modification que vous avez fait:
 
 cd /chemin/grp-5/maint
 
-git add .
+si vous voulez uploader les modifications faites sur tous les fichier de notre projet:
 
-git commit -m "le nom de votre modification"
+git add . 
+
+si vous voulez uploader les modifications d'un seul fichier en particulier, faites:
+
+cd cheminVersVotreFichier
+
+git add fichier
+
+Ainsi de suite
+
+Ensuite:
+
+git commit -m "quelles ont été vos midifications"
 
 git push
 
