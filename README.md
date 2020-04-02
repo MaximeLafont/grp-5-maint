@@ -16,7 +16,7 @@ Cela va automatiquement vous rajouter toutes les modification faites.
 Ensuite, modifiez ce que vous voulez.
 Pour uploader les nouvelles modification que vous avez fait:
 
-cd /chemin/grp-5/maint
+cd /chemin/grp-5-maint
 
 si vous voulez uploader les modifications faites sur tous les fichier de notre projet:
 
