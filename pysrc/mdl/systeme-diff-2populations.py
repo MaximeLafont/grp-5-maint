@@ -1,4 +1,5 @@
  ####################### Modèle d'étude, sujet 5 #########################
+ import functools
  class modl_principal:
  	def __init__(K1,K2,r1,r2,alpha,beta,gamma,delta):
  		self._K1 = K1
