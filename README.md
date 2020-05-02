@@ -41,5 +41,6 @@ Dans tous les cas, même si vous n'êtes pas sure de vos commit, on a accès à 
 Si vous utilisez pas souvent git, vous allez surement devoir vous identifier avant de pusher:
 
 git config --global user.name "John Doe" 
+
 git config --global user.email johndoe@example.com
 
