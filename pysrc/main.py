@@ -5,23 +5,26 @@ from tools.line_style_form import LineStyle , Color , Form
 from tools.phase_diag import PhaseDiag
 from tools.fonctions import *
 from mdl.systemeProjet import SystemeProjet
-
+import matplotlib.pyplot as plt
 cnds = Initials()
 col = Color()
 frm = Form()
 red_solid =  LineStyle(col.red(),frm.get_solid())
-cnds.append((5,5),red_solid)
-r1 = 0.8
-r2 = 0.5
-K1 = 50
-K2 = 50
-alpha = 0.6
-beta = 0.4
-gamma = 0
-delta = 0
-xaxis = Axis(0,K1,15j,"Axe x")
-yaxis = Axis(0,K2,15j,"Axe y")
-taxis = Axis(0,1000,5000,"Axe t")
-Projet  = SystemeProjet(r1,r2,K1,K2,alpha,beta,gamma,delta,"Projet")
+cyan_solid =  LineStyle(col.cyan(),frm.get_solid())
+yellow_solid =  LineStyle(col.yellow(),frm.get_solid())
+param = ask_parameters()
+cnds.append((param[8],param[9]),red_solid)
+r1 = param[2]
+r2 = param[3]
+K1 = param[0]
+K2 = param[1]
+alpha = param[4] 
+beta =  param[5]
+gamma =  param[6]
+delta = param[7]
+xaxis = Axis(0,K1,20j,"Espece 1")
+yaxis = Axis(0,K2,20j,"Espèce 2")
+taxis = Axis(0,200,10000,"Axe t")
+Projet  = SystemeProjet(r1,r2,K1,K2,alpha,beta,gamma,delta,"")
 phases = PhaseDiag(Projet.get_title(),figsize=(9,9))
 phases.portrait(Projet , cnds , xaxis , yaxis , taxis,exprtpng=False ,showfield=True)
